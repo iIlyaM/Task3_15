@@ -1,5 +1,9 @@
 from math import *
 
+import numpy as np
+from linalg import det
+
+
 class Point:
 
     def __init__(self, x, y):
@@ -36,25 +40,32 @@ class Triangle:
         self.side_bc = self.segment_b.find_segment_length()
         self.side_ca = self.segment_c.find_segment_length()
 
-        # if self.side_ab + self.side_bc < self.side_ca or self.side_bc + self.side_ca < self.side_ab \
-        #         or self.side_ab + self.side_ca < self.side_bc:
-        #     raise Exception("A triangle with such vertices cannot exist")
+        if self.side_ab + self.side_bc < self.side_ca or self.side_bc + self.side_ca < self.side_ab \
+                or self.side_ab + self.side_ca < self.side_bc:
+            raise Exception("A triangle with such vertices cannot exist")
 
-        def is_point_on_line(seg: Segment, point: Point) -> bool:
-            if (point.y - seg.start_point.y) / (seg.end_point.y - seg.start_point.y) \
-                    == (point.x - seg.start_point.x / (seg.end_point.x - seg.start_point.x)):
-                return True
+        # def is_point_on_line(seg: Segment, point: Point) -> bool:
+        #     if (point.y - seg.start_point.y) / (seg.end_point.y - seg.start_point.y) \
+        #             == (point.x - seg.start_point.x / (seg.end_point.x - seg.start_point.x)):
+        #         return True
+
+        def calc_determinant():
+            a = [[point1.x, point1.y, 1], [point2.x, point2.y, 1], [point3.x, point3.y, 1]]
+            b = int(np.linalg.det(a))
+            return b
 
         def is_impossible_create():
-            if (point1.x == point2.x == point3.x) or (point1.y == point2.y == point3.y):
+            if calc_determinant() == 0:
                 return True
-            if is_point_on_line(self.segment_a, self.point3) and is_point_on_line(self.segment_b, self.point1) \
-                    and is_point_on_line(self.segment_c, self.point3):
-                return True
+            # if (point1.x == point2.x == point3.x) or (point1.y == point2.y == point3.y):
+            #     return True
+            # if is_point_on_line(self.segment_a, self.point3) and is_point_on_line(self.segment_b, self.point1) \
+            #         and is_point_on_line(self.segment_c, self.point3):
+            #     return True
             return False
 
-        # if is_impossible_create():
-        #     raise Exception("Vertices lie on the same line")
+        if is_impossible_create():
+            raise Exception("Vertices lie on the same line")
 
     def get_angle_with_sides(self):
         angle_a = (acos((self.side_ab ** 2 + self.side_bc ** 2 - self.side_ca ** 2)
