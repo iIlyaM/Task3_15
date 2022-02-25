@@ -1,24 +1,13 @@
-Triangle: with vertices a - Point(4.0,3.0), b - Point(6.0,5.0), c - Point(8.0,3.0) 
-with size AB = 2.8284271247461903, BC = 2.8284271247461903, CA = 4.0 
- Triangle: with vertices a - Point(-6.0,-7.0), b - Point(-3.0,-4.0), c - Point(-3.0,-7.0) 
-with size AB = 4.242640687119285, BC = 3.0, CA = 3.0 
- Triangle: with vertices a - Point(-6.0,0.0), b - Point(-6.0,8.0), c - Point(-2.0,4.0) 
-with size AB = 8.0, BC = 5.656854249492381, CA = 5.656854249492381 
+Triangle: with vertices a - Point(-9.0,-4.0), b - Point(-1.0,-4.0), c - Point(-1.0,4.0) 
+with size AB = 8.0, BC = 8.0, CA = 11.313708498984761 
+ Triangle: with vertices a - Point(4.0,-7.0), b - Point(3.0,-14.0), c - Point(10.0,-15.0) 
+with size AB = 7.0710678118654755, BC = 7.0710678118654755, CA = 10.0 
+ Triangle: with vertices a - Point(-10.0,5.0), b - Point(-7.0,10.0), c - Point(-6.0,6.0) 
+with size AB = 5.830951894845301, BC = 4.123105625617661, CA = 4.123105625617661 
 
-Triangle: with vertices a - Point(-6.0,0.0), b - Point(-6.0,8.0), c - Point(-2.0,4.0) 
-with size AB = 8.0, BC = 5.656854249492381, CA = 5.656854249492381 
- Triangle: with vertices a - Point(-6.0,-7.0), b - Point(-3.0,-4.0), c - Point(-3.0,-7.0) 
-with size AB = 4.242640687119285, BC = 3.0, CA = 3.0 
- Triangle: with vertices a - Point(4.0,3.0), b - Point(6.0,5.0), c - Point(8.0,3.0) 
-with size AB = 2.8284271247461903, BC = 2.8284271247461903, CA = 4.0 
+Triangle: with vertices a - Point(1.0,14.0), b - Point(4.0,4.0), c - Point(11.0,9.0) 
+with size AB = 10.44030650891055, BC = 8.602325267042627, CA = 11.180339887498949 
 
-Triangle: with vertices a - Point(-6.0,0.0), b - Point(-6.0,8.0), c - Point(-2.0,4.0) 
-with size AB = 8.0, BC = 5.656854249492381, CA = 5.656854249492381 
- Triangle: with vertices a - Point(4.0,3.0), b - Point(6.0,5.0), c - Point(8.0,3.0) 
-with size AB = 2.8284271247461903, BC = 2.8284271247461903, CA = 4.0 
- Triangle: with vertices a - Point(-6.0,-7.0), b - Point(-3.0,-4.0), c - Point(-3.0,-7.0) 
-with size AB = 4.242640687119285, BC = 3.0, CA = 3.0 
-
-Triangle: with vertices a - Point(2.0,-14.0), b - Point(2.0,-7.0), c - Point(8.0,-14.0) 
-with size AB = 7.0, BC = 9.219544457292887, CA = 6.0 
+Triangle: with vertices a - Point(7.0,-1.0), b - Point(8.0,-4.0), c - Point(11.0,-2.0) 
+with size AB = 3.1622776601683795, BC = 3.605551275463989, CA = 4.123105625617661 
 
